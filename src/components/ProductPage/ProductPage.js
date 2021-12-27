@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productActions";
 import ProductComponent from '../Product/Product'
 
-const ProductListing = () => {
+const ProductPage = () => {
   const products = useSelector((state) => state.allProducts.products)
   const dispatch = useDispatch()
 
@@ -28,4 +28,4 @@ const ProductListing = () => {
   )
 }
 
-export default ProductListing
+export default ProductPage
